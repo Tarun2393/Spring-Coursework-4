@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>User</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+  <script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script th:src="@{/js/users.js}"></script>
+</head>
+<body>
+    <div class="logo">
+        <img th:src="@{/img/busyqa.png}" alt="busyQA logo" /> <br />
+    </div>
+    <div class="container">
+        <form>
+            <label for="id">Id:</label>
+            <input type="text" id="id"><br />
+
+            <label for="first">First Name:</label>
+            <input type="text" id="first"><br />
+
+            <label for="last">Last Name:</label>
+            <input type="text" id="last"><br />
+
+            <label for="username">Username:</label>
+            <input type="text" id="username"><br />
+
+            <label for="birth">Birth:</label>
+            <input type="text" id="birth"><br />
+
+            <label for="status">Status:</label>
+            <input type="text" id="status" disabled="disabled"><br /><br />
+
+            <input type="button" id="query" value="Get Data">
+            <input type="button" id="save" value="Update Data">
+            <input type="button" id="clear" value="Clear Form">
+        </form>
+    </div>
+</body>
+</html>

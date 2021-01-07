@@ -1,0 +1,44 @@
+
+Instructions:
+>>>>>>>>>>>>>
+
+This application was build based on the springboot-course-4-complete project, it includes
+a new feature, which is to update the user's information in the DB.
+The client (HTML template) sends the user's information in JSON format to Spring, then Spring
+breaks down the JSON string and populates the User JPA entity with it.
+
+Look at the JavaScript file located in the folder "resources/static/js" called user.js, line 56,
+to see that the function JSON.stringify creates a JSON object.
+
+The JSON object looks like:
+
+               {
+                 'idUser': 2,
+                    'birth': 09-09-1990,
+                    'firstName': James,
+                    'lastName': Dunning,
+                    'username': jdunning
+                  }
+
+Note.- This project has one HTML template that uses the Thymeleaf template engine.
+This template requires NO modifications unless you want to customize it. The
+only elements that need modifications are the UserController and the UserService.
+The needed changes are detailed in the UserController and UserService classes.
+You can use the springboot-course-4-complete project that we completed in class as a reference.
+
+Consider that in this project, we use jQuery (a JavaScript framework) to send information
+from the front-end to the back-end, but you don't need to learn jQuery as we use it here
+just for simplicity. In the next module, we will use Angular to send the data to the back-end,
+which is the aim of this course.
+
+Make the modifications in the UserController.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The modifications required are detailed in the four steps inside the UserController
+itself.
+
+Make the modifications in the UserService.
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+The modifications required are detailed in the three steps inside the UserService
+itself.
